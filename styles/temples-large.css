@@ -1,0 +1,12 @@
+/* Large Screen Styles */
+
+/* Use Flexbox to layout navigation horizontally for larger screens */
+nav {
+    flex-direction: row; /* Make the nav links horizontal */
+    justify-content: space-around;
+}
+
+/* Make main content use a grid with multiple columns on large screens */
+main {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns in larger view */
+}
