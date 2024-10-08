@@ -90,3 +90,17 @@ footer {
     padding: 20px;
     font-size: 0.8rem;
 }
+
+/* Media query for larger screens (1024px and above) */
+@media screen and (min-width: 1024px) {
+    /* Change the flex direction of the navigation for larger screens */
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    /* Make the main content use a grid with multiple columns on large screens */
+    main {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns in larger view */
+    }
+}
