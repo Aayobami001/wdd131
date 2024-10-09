@@ -9,3 +9,8 @@ document.getElementById("lastModified").textContent = "Last Modification: " + la
 document.addEventListener("DOMContentLoaded", () => {
     console.log("Temple Album page is loaded and ready.");
 });
+
+function toggleMenu() {
+    const nav = document.getElementById('main-nav');
+    nav.classList.toggle('open');
+}

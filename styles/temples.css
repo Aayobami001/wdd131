@@ -9,60 +9,79 @@ body {
 header {
     background-color: #4b0082;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px;
-    text-align: center;
+    position: relative;
 }
 
-/* Use Flexbox for navigation */
+h1 {
+    margin: 0;
+}
+
+/* Hamburger menu styles */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+/* Navigation styles */
 nav {
     display: flex;
-    justify-content: center;
-    flex-direction: column; /* Stack links vertically in mobile */
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    gap: 15px;
 }
 
 nav ul li {
-    margin: 10px 0;
+    margin: 0;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     padding: 10px;
-    transition: background-color 0.3s ease; /* Add hover transition */
+    transition: background-color 0.3s ease;
 }
 
-/* Add hover effect on links */
+/* Add hover effect */
 nav ul li a:hover {
     background-color: #333;
     border-radius: 5px;
 }
 
-/* Center the main content and restrict the width */
+/* Main Content */
 main {
     width: 90%;
-    max-width: 800px; /* Limit the width */
-    margin: 0 auto; /* Center the main content horizontally */
+    max-width: 800px;
+    margin: 0 auto;
     padding: 20px;
     text-align: center;
 }
 
+/* Fixing alignment for Home title and grid */
 h2 {
-    margin-top: 0;
+    margin-bottom: 20px; /* Add space below the title */
 }
 
-/* Use Grid for figure layout with one column in mobile view */
-main {
+/* Grid Layout */
+.grid-container {
     display: grid;
-    grid-template-columns: 1fr; /* One column by default for mobile */
+    grid-template-columns: 1fr;
     gap: 20px;
 }
 
@@ -91,16 +110,45 @@ footer {
     font-size: 0.8rem;
 }
 
-/* Media query for larger screens (1024px and above) */
+/* Media query for larger screens */
 @media screen and (min-width: 1024px) {
-    /* Change the flex direction of the navigation for larger screens */
-    nav {
+    /* Horizontal navigation */
+    nav ul {
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: flex-end;
     }
 
-    /* Make the main content use a grid with multiple columns on large screens */
-    main {
-        grid-template-columns: repeat(3, 1fr); /* 3 columns in larger view */
+    /* Hide hamburger menu on larger screens */
+    .menu-icon {
+        display: none;
+    }
+
+    /* Make the grid layout responsive for larger screens */
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Media query for mobile screen */
+@media screen and (max-width: 1024px) {
+    /* Show hamburger menu in mobile view */
+    .menu-icon {
+        display: flex;
+    }
+
+    /* Hide the nav menu initially (for mobile) */
+    #main-nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #4b0082;
+        border-radius: 5px;
+    }
+
+    /* Show nav menu when toggled */
+    #main-nav.open {
+        display: flex;
     }
 }
