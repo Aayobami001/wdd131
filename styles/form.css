@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: burlywood;
+}
+
+form {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    
+}
+
+legend {
+    color: #333;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: #4b0082;
+    color: #f3f4f6;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    color: #333;
+    font-weight: bold;
+    margin-top: 1.2em;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+} 
+
+.rating label {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    margin-top: 0.5em;
+    cursor: pointer;
+    /* color: #007acc; */
+}
+
+.features label {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5em;
+    margin-top: 0.5em;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+input[type="submit"] {
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 12px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: greenyellow;
+    color: #005f99;
+}
+
+footer {
+    background-color: #4b0082;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+/* Review confirmation styles */
+h1 {
+    font-weight: bold;
+    /* color: #4b0082; */
+}
+
+p {
+    font-weight: bold;
+    color: #4b0082;
+}
+
+/* Accessibility and UX Enhancements */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #007acc;
+}
+
+label {
+    margin-top: 0.5em;
+}
+
+/* Form Layout Adjustments */
+form > * {
+    margin-top: 0.5em;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    form {
+        padding: 1.5em;
+    }
+}
