@@ -47,37 +47,37 @@ a:hover {
 
 /* Main layout */
 main {
-    /* display: flex; */
+    display: grid;
+    padding: 20px;
     /* grid-template-columns: 2fr 1fr; */
     justify-content: space-between;
     background-color: #f0f0f0;
 }
 
 .card {
+    display: grid;
     background-color: lightgray;
+    margin: 10px;
     padding: 20px;
-    /* border-radius: 10px; */
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .card img {
     border-radius: 10px;
 }
 
-.image {
-    text-align: right;
-    float: right;    
-}
 img {
-     max-width: 20%;
+     max-width: 15%;
      margin: 10px 0;
      margin-right: 30px;
+     float: right;
  }
 
 h2 {
     text-align: center;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-weight: 700;
     background-color: #003366;
     color: #f0f0f0;
@@ -88,12 +88,11 @@ h3 {
     text-align: center;
     text-decoration: underline 2px;
     color: #003366;
-    padding: 30px;
-    margin-top: 500px;
+    padding: 20px;
 }
 
 footer {
-    background-color: #333;
+    background-color: #003366;
     color: white;
     text-align: center;
     padding: 15px;
