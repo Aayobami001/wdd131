@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    background-color: aliceblue;
+}
+
+header, main, footer {
+    max-width: 640px;
+    text-align: center;
+    margin: 1rem auto;
+    padding: 20px;
+    background-color: #003366;
+    color: #eee;
+    /* border-radius: 5px; */
+    /* border: 1px solid #bbb; */
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+}
+
+section {
+    padding: 20px;
+    background-color: lightgray;
+    color: #000;
+    border-radius: 5px;
+    border: 1px solid #003366;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+p {
+    font-weight: 600;
+    text-indent: 20px;
+    word-spacing: 3px;
+    margin: 20px;
+    padding: 10px;
+}
