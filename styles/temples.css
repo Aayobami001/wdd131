@@ -1,0 +1,162 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+}
+
+header {
+    background-color: #4b0082;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+h1 {
+    margin: 0;
+    padding: 10px;
+}
+
+/* Hamburger menu styles */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Add hover effect */
+nav ul li a:hover {
+    background-color: lightcoral;
+    color: #000;
+    border-radius: 5px;
+}
+
+/* Main Content */
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Fixing alignment for Home title and grid */
+h2 {
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    /* Add space below the title */
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+figure {
+    margin: 0;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+figcaption {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+footer {
+    background-color: #4b0082;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8rem;
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 1024px) {
+
+    /* Horizontal navigation */
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    /* Hide hamburger menu on larger screens */
+    .menu-icon {
+        display: none;
+    }
+
+    /* Make the grid layout responsive for larger screens */
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Media query for mobile screen */
+@media screen and (max-width: 1024px) {
+
+    /* Show hamburger menu in mobile view */
+    .menu-icon {
+        display: flex;
+    }
+
+    /* Hide the nav menu initially (for mobile) */
+    #main-nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #4b0082;
+        border-radius: 5px;
+    }
+
+    /* Show nav menu when toggled */
+    #main-nav.open {
+        display: flex;
+    }
+}
