@@ -1,0 +1,139 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4b0082;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /* position: relative; */
+}
+
+/* Hamburger menu styles */
+.menu-icon {
+    /* display: none; */
+    /* cursor: pointer; */
+    flex-direction: column;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Add hover effect */
+nav ul li a:hover {
+    background-color: #333;
+    border-radius: 5px;
+}
+
+/* Main Content */
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* week 04 */
+.temple-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    background-color: lightgrey;
+    border-radius: 3px;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #4b0082;    
+}
+
+.temple-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,128,225,0.4), 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+.temple-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer {
+    background-color: #4b0082;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 1024px) {
+
+    /* Horizontal navigation */
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    /* Hide hamburger menu on larger screens */
+    .menu-icon {
+        display: none;
+    }
+
+    /* Make the grid layout responsive for larger screens */
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Media query for mobile screen */
+@media screen and (max-width: 1024px) {
+
+    /* Show hamburger menu in mobile view */
+    .menu-icon {
+        display: flex;
+    }
+
+    /* Hide the nav menu initially (for mobile) */
+    #main-nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #4b0082;
+        border-radius: 5px;
+    }
+
+    /* Show nav menu when toggled */
+    #main-nav.open {
+        display: flex;
+    }
+}
