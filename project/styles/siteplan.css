@@ -1,0 +1,38 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FAF9F6;
+    color: #3E2723;
+    line-height: 1.6;
+    padding: 2rem;
+    max-width: 960px;
+    margin: auto;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #4CAF50;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+.wireframes img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #4CAF50;
+    margin-top: 0.5rem;
+}
+
+footer {
+    margin-top: 3rem;
+    font-size: 0.85rem;
+    text-align: center;
+}
