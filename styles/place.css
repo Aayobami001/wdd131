@@ -102,7 +102,7 @@ footer {
     }
 
     #weather h2::after {
-        content: url('images/weather-icon');
+        content: url('images/weather-Icon');
         display: block;
         margin-top: 10px;
     }
