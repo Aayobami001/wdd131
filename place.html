@@ -6,6 +6,7 @@
     <title>WDD 131-Country page</title>
     <meta name="description" content="In this assignment, you will apply the concepts from the learning activities to the design and development of a web page. The subject of the page is a country or place where you live, have visited, or wish to visit.">
     <meta name="author" content="Ayobami I. Akinbiyi">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&amp;family=Open+Sans&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/place.css">
     <script src="scripts/place.js" defer></script>
 </head>
@@ -16,10 +17,10 @@
     
     <main>
         <!-- Hero Image with srcset for responsive design -->
-         <img src="images/pictureplace.webp" alt="hero-image" id="hero-image">
         <picture>
-            <source srcset="images/picture-place-large.webp" media="(min-width: 768px)">
-            <source srcset="images/picture-placemedium.webp" media="(max-width: 767px)">
+            <source srcset="images/pictureplace.webp" media="(min-width: 768px)">
+            <source srcset="images/pictureplace.webp" media="(max-width: 767px)">
+            <img src="images/pictureplace.webp" alt="Hero Image" id="hero-image">
         </picture>
     
         <!-- Data Section -->
@@ -47,7 +48,7 @@
     </main>
 
     <footer>
-        <p>©<span id="currentyear"></span>🎨 Ayobami AKinbiyi 🎨West African 🎨</p>
+        <p>©<span id="currentyear"></span>🎨 Ayobami Akinbiyi 🎨West African 🎨</p>
         <p id="lastModified"></p>
     </footer>
 </body>

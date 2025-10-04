@@ -24,7 +24,7 @@ header {
     color: var(--accent-color);
     text-align: center;
     padding: 20px;
-    font-family: var(--font-title);
+    font-family: var(--font-body);
 }
 
 h1 {
@@ -100,7 +100,7 @@ footer {
     }
 
     #weather h2::after {
-        content: url('images/weather-icon.svg');
+        content: url('images/weather-icon');
         display: block;
         margin-top: 10px;
     }
