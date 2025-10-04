@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131-Country page</title>
+    <meta name="description" content="In this assignment, you will apply the concepts from the learning activities to the design and development of a web page. The subject of the page is a country or place where you live, have visited, or wish to visit.">
+    <meta name="author" content="Ayobami I. Akinbiyi">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>West African-Nigeria</h1>
+    </header>
+    
+    <main>
+        <!-- Hero Image with srcset for responsive design -->
+         <img src="images/pictureplace.jpg" alt="hero-image" id="hero-image">
+        <picture>
+            <source srcset="images/picture-place-large.webp" media="(min-width: 768px)">
+            <source srcset="images/picture-placemedium.webp" media="(max-width: 767px)">
+        </picture>
+    
+        <!-- Data Section -->
+        <section id="data">
+            <h2>Lagos State Data</h2>
+            <p><strong>Area:</strong> 923,769 sq km</p>
+            <p><strong>Population:</strong> 211,400,708</p>
+            <p><strong>Capital:</strong> Abuja</p>
+            <p><strong>Languages:</strong> English, Hausa, Yoruba, Igbo</p>
+            <p><strong>Currency:</strong> Nigerian Naira (₦)</p>
+            <p><strong>Time Zone:</strong> UTC+1</p>
+            <p><strong>Calling Code:</strong> +234</p>
+            <p><strong>Internet TLD:</strong> .ng</p>
+        </section>
+    
+        <!-- Weather Section -->
+        <section id="weather">
+            <h2>Lagos, lagos State</h2>
+            <p><strong>Updated a few minute ago...</strong></p>
+            <p><strong>Temperature:</strong> 28°C</p>
+            <p><strong>Conditions:</strong> Sunny</p>
+            <p><strong>Wind:</strong> 12 km/h</p>
+            <p><strong>Wind Chill:</strong> 27°C</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span>🎨 Ayobami AKinbiyi 🎨West African 🎨</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

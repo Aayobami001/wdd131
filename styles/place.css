@@ -1,0 +1,141 @@
+/* Global Styles and Variables */
+:root {
+    --primary-color: #008000;
+    /* Nigerian Green */
+    --secondary-color: #FFD700;
+    /* Gold */
+    --accent-color: #ffffff;
+    /* White */
+    --font-title: 'Montserrat', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    margin: 0;
+    padding: 0;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+/* Header Styles */
+header {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    text-align: center;
+    padding: 20px;
+    font-family: var(--font-title);
+}
+
+h1 {
+    margin: 0;
+}
+h2 {
+    color: #ffffff;
+    background-color: green;
+    padding: 4px;
+    margin: 0 0 10px;
+    border-radius: 3px;
+    padding-right: 0 2rem;
+    text-align: center;
+}
+p {
+    font-weight: 700;
+}
+
+/* Main Content Styles */
+main {
+    margin: 20px;
+    position: relative;
+}
+
+#hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* Data Section */
+#data, #weather {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 20%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#data {
+    left: 5%;
+}
+
+#weather {
+    right: 5%;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    main {
+        display: block;
+    }
+
+    #data, #weather {
+        position: static;
+        margin: 10px 0;
+    }
+
+    #hero-image {
+        max-width: 100%;
+    }
+
+    #weather h2::after {
+        content: url('images/weather-icon.svg');
+        display: block;
+        margin-top: 10px;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+    main {
+        display: block;
+        /* display: grid; */
+        /* grid-template-columns: 1fr 2fr 1fr; */
+        /* gap: 20px; */
+    }
+
+    #data {
+        grid-column: 1/2;
+        /* width: 30%; */
+    }
+
+    picture {
+        grid-column: 2/3;
+    }
+
+    #weather {
+        grid-column: 3/4;
+        width: 30%;
+        text-align: right;
+    }
+
+    /* Pseudo-element for Weather Icon in Desktop View */
+    #weather h2::after {
+        content: "⛅⛅";
+        display: inline-block;
+        margin-left: 10px;
+        font-size: 2rem;
+        color: var(--secondary-color);
+    }
+}
