@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131-Picture Album_Temples</title>
+    <meta name="description" content="WDD 131-Here we have a Picture album page that is responsive in both small and larger views as needful to user. This page will utilize a 'hamburger' menu and respond to user requests.">
+    <meta name="author" content="Ayobami Akinbiyi">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 1024px)">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <!-- Hamburger menu Icon for mobile -->
+         <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+         </div>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#" id="old">Old</a></li>
+                <li><a href="#" id="new">New</a></li>
+                <li><a href="#" id="large">Large</a></li>
+                <li><a href="#" id="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Temple Cards Container -->
+        <div id="temple-cards-container" class="temple-cards-container"></div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span>🎨 Ayobami AKinbiyi 🎨</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

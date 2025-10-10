@@ -1,0 +1,190 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #D2C1B6;
+}
+
+header {
+    background-color: #090040;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    position: relative;
+}
+
+h1 {
+    margin: 0;
+    padding: 10px;
+}
+
+/* Hamburger menu styles */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+/* Add hover effect */
+nav ul li a:hover {
+    background-color: #D3DAD9;
+    color: #000;
+    border-radius: 5px;
+}
+
+/* Main Content */
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Fixing alignment for Home title and grid */
+h2 {
+    text-align: center;
+    background-color: #090040;
+    color: #fff;
+    padding: 4px;
+    border-radius: 5px;
+    /* margin-bottom: 20px; */
+    text-decoration: underline;
+    /* Add space below the title */
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+figure {
+    margin: 0;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+figcaption {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #333;
+    font-weight: Bold;
+    font-style: italic;
+}
+
+/* week 04 */
+.temple-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 15px;
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .temple-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .temple-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+footer {
+    background-color: #090040;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8rem;
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 1024px) {
+
+    /* Horizontal navigation */
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    /* Hide hamburger menu on larger screens */
+    .menu-icon {
+        display: none;
+    }
+
+    /* Make the grid layout responsive for larger screens */
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Media query for mobile screen */
+@media screen and (max-width: 1024px) {
+
+    /* Show hamburger menu in mobile view */
+    .menu-icon {
+        display: flex;
+    }
+
+    /* Hide the nav menu initially (for mobile) */
+    #main-nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 5.2rem;
+        right: 10px;
+        background-color: #090040;
+        border-radius: 5px;
+    }
+
+    /* Show nav menu when toggled */
+    #main-nav.open {
+        display: flex;
+    }
+}
