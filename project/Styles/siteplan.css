@@ -1,0 +1,57 @@
+/* Basic Styles */
+body {
+    background-color: #A6AEBF;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2E8B57;
+    color: #F5F5F5;
+    text-align: center;
+    padding: 10px;
+    font-family: Georgia, serif;
+    font-size: 80%;
+}
+
+section h2, p {
+    font-family: Georgia, serif;
+    /* color: red; */
+    margin: 0;
+    padding: 10px;
+}
+
+/* Main Content */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #F5F5F5;
+    color: #000;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Typography */
+p {
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #2E8B57;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
