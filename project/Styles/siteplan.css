@@ -27,7 +27,7 @@ section {
     padding: 20px;
     margin: 20px;
     background-color: #F5F5F5;
-    color: #000;
+    color: #2E8B57;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -35,6 +35,7 @@ section {
 /* Typography */
 p {
     line-height: 1.6;
+    color: #000;
 }
 
 ul {
@@ -48,7 +49,7 @@ img {
 }
 
 /* Footer */
-footer {
+footer, p {
     background-color: #2E8B57;
     color: #fff;
     text-align: center;
