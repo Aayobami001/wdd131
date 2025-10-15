@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews Confirmation</title>
+    <meta name="description" content="A localStorage to keep track of the number of reviews completed by the user client by adding a counter to the form submission review.html page. Every time that page is loaded successfully upon form submission, add one to the counter.">
+    <meta name="author" content="Ayobami AKinbiyi">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <h1>Thank You For Your Review!</h1>
+    <p>Your review has been submitted successfully.</p>
+    <p>You have submitted <span id="reviewCount"></span> reviews so far.</p>
+
+    <script>
+        // Check if the review count exists in localStorage
+        let reviewCount = localStorage.getItem("reviewCount");
+
+        // If not, initialize it to 0
+        if (!reviewCount) {
+            reviewCount = 0;
+        }
+
+        // Increment the review count and update localStorage
+        reviewCount = parseInt(reviewCount) + 1;
+        localStorage.setItem("reviewCount", reviewCount);
+
+        // Display the updated count on the page
+        document.getElementById("reviewCount").textContent = reviewCount;
+    </script>
+</body>
+</html>
