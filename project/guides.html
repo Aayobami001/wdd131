@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Grow Naija Gardening Guides" />
+    <title>Grow Naija - Guides</title>
+    <link rel="stylesheet" href="styles/style.css"/>
+    <script defer src="scripts/contact.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Grow Naija</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="guides.html" class="active">Guides</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="guides">
+        <section class="intro">
+            <h2>Getting Started with Urban Gardening</h2>
+            <p>Whether you live in a flat, a face-me-I-face-you, or just have a balcony, this guide shows how to grow
+                your own food with little space and budget.</p>
+        </section>
+
+        <section class="guide-section">
+            <h3>Choosing What to Grow</h3>
+            <p>Popular options include fluted pumpkin (ugu), scent leaf, okra, tomatoes, and peppers. These plants adapt
+                well to Nigerian climate and can thrive in containers.</p>
+        </section>
+
+        <section class="guide-section">
+            <h3>Maximizing Small Spaces</h3>
+            <ul>
+                <li>Use sacks, buckets, and plastic bottles for vertical gardening.</li>
+                <li>Old tires and crates can serve as raised garden beds.</li>
+                <li>Train plants upward using sticks, bamboo, or strings.</li>
+            </ul>
+        </section>
+
+        <section class="guide-section">
+            <h3>Dealing with Nigeria’s Weather</h3>
+            <p><strong>Dry Season:</strong> Water early in the morning or late evening to reduce evaporation. Mulch your
+                soil with dried grass or leaves.</p>
+            <p><strong>Rainy Season:</strong> Ensure proper drainage in containers to avoid root rot. Raise garden beds
+                off the ground if possible.</p>
+        </section>
+
+        <section class="tips">
+            <h3>Naija-Friendly Gardening Tips</h3>
+            <ul>
+                <li><strong>Use containers:</strong> Buckets, old paint cans, and sacks work perfectly.</li>
+                <li><strong>Water wisely:</strong> Water early in the morning or evening to reduce evaporation.</li>
+                <li><strong>Compost:</strong> Recycle kitchen scraps into natural fertilizer.</li>
+                <li><strong>Seasonal advice:</strong> Plant leafy greens in rainy season; root crops during dry season.
+                </li>
+            </ul>
+        </section>
+
+        <section class="plant-finder">
+            <h3>What Can You Grow?</h3>
+            <p>Not sure where to start? Use our suggestion tool to find plants that fit your space:</p>
+            <button onclick="suggestPlants()">Find My Plants</button>
+            <div id="suggestionBox" class="suggestion-output"></div>
+        </section>
+
+        <section class="gallery-preview">
+            <h3>Sample Garden Setups</h3>
+            <div class="gallery">
+                <img src="images/garden4.jpg" alt="Sack garden setup" loading="lazy" />
+                <img src="images/garden5.jpg" alt="Urban crate garden" loading="lazy" />
+                <img src="images/garden6.jpg" alt="Balcony with herbs" loading="lazy" />
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> 🤍Ayobami I. Akinbiyi 🤍 West African 🤍</p>
+        <p id="lastModified"></p>
+        <p>&copy; 2025 Grow Naija. All rights reserved.</p>
+        <a href="siteplan.html">Site Plan</a>
+    </footer>
+</body>
+
+</html>

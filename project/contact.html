@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Grow Naija - Contact Us" />
+    <title>Grow Naija - Contact</title>
+    <link rel="stylesheet" href="styles/style.css"/>
+    <script defer src="scripts/contact.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Grow Naija</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="guides.html">Guides</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact">
+        <section>
+            <h2>We'd Love to Hear from You!</h2>
+            <strong><p>Have questions, suggestions, or want to share your garden photos? Fill the form below:</p></strong>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required />
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+                    <label><input type="checkbox" name="pref" value="news"> News</label>
+                    <label><input type="checkbox" name="pref" value="updates"> Updates</label>
+                    <label><input type="checkbox" name="pref" value="offers"> Offers</label> 
+                </fieldset>
+
+                <button type="submit">Subcribe</button>
+                <p id="formStatus" class="form-status"></p>
+            </form>
+            
+        </section>
+        <div id="message" aria-live="polite"></div>
+
+        <!-- A lazily loaded image -->
+        <section class="contact-image">
+            <img src="images/test.jpg" alt="Urban gardening setup" loading="lazy" width="400" height="250">
+        </section>
+        </main>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> 🤍Ayobami I. Akinbiyi 🤍 West African 🤍</p>
+        <p id="lastModified"></p>
+        <p>&copy; 2025 Grow Naija. All rights reserved.</p>
+        <a href="siteplan.html">Site Plan</a>
+    </footer>
+</body>
+
+</html>

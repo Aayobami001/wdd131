@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Grow Naija - A beginner-friendly guide to urban gardening in Nigeria, optimized for small spaces and local resources." />
+    <title>Grow Naija - Home</title>
+    <link rel="stylesheet" href="styles/style.css"/>
+    <script defer src="scripts/contact.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="main-nav">
+            <h1>Grow Naija</h1>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="guides.html">Guides</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="home">
+        <section class="hero">
+            <h2>Welcome to Grow Naija</h2>
+            <p>Your beginner-friendly guide to urban gardening in Nigeria. Learn how to grow your own fresh food in
+                small spaces using simple, local materials.</p>
+            <a href="guides.html" class="btn">Get Started</a>
+        </section>
+
+        <section class="features">
+            <h3>Why Grow Naija?</h3>
+            <ul>
+                <li>
+                    <h4>🌿 Grow in Small Spaces</h4>
+                    <p>Use balconies, buckets, and containers to start your garden anywhere.</p>
+                </li>
+                <li>
+                    <h4>🌞 Made for Naija</h4>
+                    <p>Tips that work in our climate—dry and rainy seasons included!</p>
+                </li>
+                <li>
+                    <h4>💡 Easy & Affordable</h4>
+                    <p>DIY hacks and tools you can find in your local market or around the house.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="gallery-preview">
+            <h3>Garden Inspiration</h3>
+            <div class="gallery">
+                <picture>
+                    <source srcset="images/garden1.jpeg" type="image/webp">
+                    <img src="images/garden1.jpeg" alt="Bucket garden" loading="lazy" width="300" height="200">
+                </picture>
+                <picture>
+                    <source srcset="images/garden2.jpeg" type="image/webp">
+                    <img src="images/garden2.jpg" alt="Balcony plants" loading="lazy" width="300" height="200">
+                </picture>
+                <picture>
+                    <source srcset="images/garden3.jpeg" type="image/webp">
+                    <img src="images/garden3.jpg" alt="Raised beds" loading="lazy" width="300" height="200">
+                </picture>
+            </div>
+        </section>
+
+        <section class="plant-finder">
+            <h3>What Can You Grow?</h3>
+            <p>Use our tool to get personalized suggestions based on your space and sunlight:</p>
+            <form id="plantForm">
+                <label for="space">Your space:</label>
+                <select id="space" name="space" required>
+                    <option value="">Select one</option>
+                    <option value="balcony">Balcony</option>
+                    <option value="backyard">Backyard</option>
+                    <option value="window">Window</option>
+                </select>
+
+                <label for="sunlight">Sunlight:</label>
+                <select id="sunlight" name="sunlight" required>
+                    <option value="">Select one</option>
+                    <option value="full">Full Sun</option>
+                    <option value="partial">Partial Sun</option>
+                    <option value="shade">Shade</option>
+                </select>
+
+                <button type="submit">Find My Plants</button>
+            </form>
+            <div id="suggestionBox" class="suggestion-box"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> 🤍Ayobami I. Akinbiyi 🤍 West African 🤍</p>
+        <p id="lastModified"></p>
+        <p>&copy; 2025 Grow Naija. All rights reserved.</p>
+        <a href="siteplan.html">Site Plan</a>
+    </footer>
+</body>
+
+</html>
